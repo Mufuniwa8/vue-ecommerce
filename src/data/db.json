@@ -1,0 +1,34 @@
+{
+     "boots": [
+        {
+          "id": 1,
+          "image": "https://i.postimg.cc/HxGRFRSJ/IMG-1233.jpg",
+          "brand": "Adidas",
+          "model": "asdf",
+          "price": 3700
+        },
+        {
+          "id": 2,
+          "image": "https://i.postimg.cc/d1mHp1kX/IMG-1234.jpg",
+          "brand": "Adidas",
+          "model": "asdf",
+          "price": 4000
+        },
+        {
+          "id": 3,
+          "image": "https://i.postimg.cc/fbsYFvcz/IMG-1235.jpg",
+          "brand": "Nike",
+          "model": "asdf",
+          "price": 3200
+        },
+        {
+          "id": 4,
+          "image": "https://i.postimg.cc/zGzgFf8v/IMG-1237.jpg",
+          "brand": "Nike",
+          "model": "asdf",
+          "price": 3000
+        }
+        
+      ]
+      
+}
