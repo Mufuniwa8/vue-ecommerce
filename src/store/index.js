@@ -3,37 +3,32 @@ import { createStore } from 'vuex'
 export default createStore({
 
   state: {
-    boot: null,
-    boots: null,
+    shop: null,
+    shops: null,
   },
 
-  getters: {
-  },
-  
   mutations: {
-    setBoots: (state, boots) => {
-      state.boots = boots;
+    setShops: (state, shops) => {
+      state.shops = shops;
     },
-    setBoot: (state, boot) => {
-      state.boot = boot;
+    setShop: (state, shop) => {
+      state.boot = shop;
     },
 },
 
   actions: {
-    getBoots: async (context) => {
-      fetch("http://locaclhost:3000/boots")
-      .then((res) => response.json())
-      .then((boots) => context.commit("setBoots", boots));
+    getShops: async (context, id) => {
+      fetch("https://mufuniwa8.github.io/data/db.json/"+ id)
+      .then((response) => response.json())
+      .then((shops) => context.commit("setShops", shops));
     },
-    getBoot: async (context,id) => {
-      fetch("http://locaclhost:3000/boots/" + id)
-      .then((res) => response.json())
-      .then((boot) => context.commit("setBoot", boot));
+    getShop: async function (context) {
+      fetch("https://mufuniwa8.github.io/data/db.json")
+        .then((response) => response.json())
+        .then((shop) => context.commit("setShop", shop));
     },
   },
 
-  modules: {
-  }
 });
 
 

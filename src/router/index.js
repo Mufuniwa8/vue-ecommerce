@@ -21,14 +21,10 @@ const routes = [
     component: () => import("../views/ShopsView.vue"),
   },
   {
-    path: "/shops/:id",
-    name: "shop",
+    path: "/shop/:id",
+    name: "shops",
     component: () => import("../views/ShopView.vue"),
     props: true,
-
-
-
-
   },
   {
     path: "/admin",

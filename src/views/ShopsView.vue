@@ -17,11 +17,11 @@ export default {
     props: ["id"],
     computed: {
         boot() {
-            return this.$store.state.tutorial
+            return this.$store.state.shops
         }
     },
     mounted() {
-        this.$store.dispatch("getBoot", this.id)
+        this.$store.dispatch("getShops", this.id)
     },
 
     components: { CardComp }
