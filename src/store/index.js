@@ -14,23 +14,21 @@ export default createStore({
     setBoots: (state, boots) => {
       state.boots = boots;
     },
-    mutations: {
-      setBoot: (state, boot) => {
-        state.boot = boot;
-      },
-  },
+    setBoot: (state, boot) => {
+      state.boot = boot;
+    },
 },
 
   actions: {
     getBoots: async (context) => {
       fetch("http://locaclhost:3000/boots")
-      .then((res) => res.json())
-      .then((boots) => context.commit("setboots", boots));
+      .then((res) => response.json())
+      .then((boots) => context.commit("setBoots", boots));
     },
-    getBoot: async (context) => {
+    getBoot: async (context,id) => {
       fetch("http://locaclhost:3000/boots/" + id)
-      .then((res) => res.json())
-      .then((boot) => context.commit("setboot", boot));
+      .then((res) => response.json())
+      .then((boot) => context.commit("setBoot", boot));
     },
   },
 

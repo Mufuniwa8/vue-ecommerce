@@ -11,6 +11,8 @@
 
 <script>
 
+import CardComp from "../components/CardComp.vue";
+
 export default {
     props: ["id"],
     computed: {
@@ -26,7 +28,3 @@ export default {
 }
 
 </script>
-
-<style>
-
-</style>
