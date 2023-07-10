@@ -1,31 +1,33 @@
 import { createStore } from 'vuex'
 
+const mufuniwa = "https://mufuniwa8.github.io/data/db.json"
+
 export default createStore({
 
   state: {
     shop: null,
-    shops: null,
+    products: null,
   },
 
   mutations: {
     setShops: (state, shops) => {
       state.shops = shops;
     },
-    setShop: (state, shop) => {
-      state.boot = shop;
+    setProducts: (state, Products) => {
+      state.Products = Products;
     },
 },
 
   actions: {
-    getShops: async (context, id) => {
-      fetch("https://mufuniwa8.github.io/data/db.json/"+ id)
+    getShops: async (context) => {
+      fetch("mufuniwa")
       .then((response) => response.json())
       .then((shops) => context.commit("setShops", shops));
     },
-    getShop: async function (context) {
-      fetch("https://mufuniwa8.github.io/data/db.json")
-        .then((response) => response.json())
-        .then((shop) => context.commit("setShop", shop));
+    getProducts: async (context) => {
+      fetch("mufuniwa")
+      .then((response) => response.json())
+      .then((products) => context.commit("setProducts", products));
     },
   },
 

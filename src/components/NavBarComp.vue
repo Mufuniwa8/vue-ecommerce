@@ -51,8 +51,8 @@
 
             <ul class="dropdown-menu dropdown-menu-light">
               <li>
-                <router-link class="dropdown-item hover" to="/shops"
-                  >Shop</router-link
+                <router-link class="dropdown-item hover" to="/products"
+                  >Products</router-link
                 >
               </li>
               <li>

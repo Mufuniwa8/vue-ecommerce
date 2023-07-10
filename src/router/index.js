@@ -19,11 +19,12 @@ const routes = [
     path: "/shops",
     name: "shops",
     component: () => import("../views/ShopsView.vue"),
+    props: true,
   },
   {
-    path: "/shop/:id",
-    name: "shops",
-    component: () => import("../views/ShopView.vue"),
+    path: "/products",
+    name: "products",
+    component: () => import("../views/ProductsView.vue"),
     props: true,
   },
   {

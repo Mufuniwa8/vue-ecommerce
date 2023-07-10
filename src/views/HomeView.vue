@@ -1,7 +1,7 @@
 <template>
 
-<!--  -->
 
+ 
       <div class="container header">
         <div class="row">
           <div class="col-6">
@@ -21,9 +21,9 @@
   <img class="brand-logo" src="https://i.postimg.cc/C5SjyyLV/Castore-brand-logo-svg.png" alt="">
 </div>
           </div>
-        </div>
-<!--  -->
-  <!-- <div class="home">
+        </div> 
+<!--  
+   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div> -->
